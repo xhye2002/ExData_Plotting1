@@ -24,7 +24,7 @@ data$DateTime <- strptime(paste(data$Date, data$Time, sep=","), format="%d/%m/%Y
 
 #plot 4
 png("plot4.png", width = 480, height = 480, bg = "transparent")
-par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma=c(0, 0 , 2, 0))
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 2), oma=c(0, 0 , 2, 0))
 with(data, plot(DateTime, Global_active_power, type = "l", xlab = "", ylab="Global Active Power"));
 with(data, plot(DateTime, Voltage, type = "l", xlab="datetime"))
 
